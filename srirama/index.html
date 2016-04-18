@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sri Rama Koti</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="home-bg">
+<div class="fadedbg"></div>
+<div class="logo-home"><img src="images/homelogo.png" /></div>
+<div class="buttons">
+<button class="select" onClick="javascript: window.location='gallery.html'" style="display:none">Gallery</button><button onClick="javascript: window.location='ram.html'">Sri Rama Koti</button><br>
+
+</div>
+<div style="position:absolute; bottom:2px; text-align:center; width:100%; z-index:10001">
+ <a style="font-size:14px; color:#fff;" href="sendfeedback.html">Send Feedback</a> | <a style="font-size:14px; color:#fff;" href="terms.html">Terms & Use</a>
+</div>
+
+<script type="text/javascript">
+ var ramuser = get_local_storage("ramakotiusers");
+ //alert(navigator.userAgent);
+ /*if(ramuser != null)
+ {	 
+    
+ }
+ else
+ {   
+   $.ajax({
+			type: "POST",
+			url: "saveuser.php",
+			data: "userid=0&koticount=0&useragent="+escape(navigator.userAgent),
+			dataType: "json",
+			success: function(response)
+			{		    
+			   //alert(response.userid);
+			   save_local_storage("ramakotiusers",response.userid);
+			},
+			error: function(e)
+			{
+				alert("An error has occured.Please try again.");
+				console.log(e);
+			}
+		});
+}*/
+</script>
+
+</body>
+</html>
